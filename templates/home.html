@@ -1,0 +1,10 @@
+<table class="table table-striped" ng-show="view.movies">
+  <tr>
+    <th>Movie Title</th>
+    <th>Year</th>
+  </tr>
+  <tr ng-repeat="movie in view.movies">
+    <td><a href="/show" ng-click="showMovieInfo(movie)">{{movie.Title}}</a></td>
+    <td>{{movie.Year}}</td>
+  </tr>
+</table>
